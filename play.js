@@ -395,7 +395,6 @@ function travel(nextLocation) {
   return new Promise(resolve => {
     setTimeout(() => {
       player.location = nextLocation;
-      player.timeTravelCount++;
       console.log(`\nТы перемещаешься в ${locations[nextLocation].name}.`);
       resolve();
     }, 2000);
