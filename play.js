@@ -445,7 +445,6 @@ function askQuestion(query) {
   return new Promise(resolve => rl.question(query, resolve));
 }
 
-// Запуск игры
 async function startGame() {
   console.log("Ты - обычный человек, который случайно получил возможность путешествовать во времени.");
   console.log("Но что-то пошло не так, и мир изменился...");
