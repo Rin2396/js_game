@@ -244,8 +244,8 @@ const events = {
   
           if (player.health <= 0) {
             console.log("\nТы проиграл и умер.");
-            player.location = 'modernCity';
-            return;
+            rl.close();
+            process.exit();
           } else {
             console.log("Вы можете попытаться снова.");
           }
